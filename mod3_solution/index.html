@@ -7,117 +7,80 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
-    <title>Test to see the navbar</title>
+
+    <link href="css/styles.css"  rel="stylesheet">
+    <title>Mod3_solution!</title>
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-light">
-            <div class="container-fluid">             
-                        
-                        <div class="navbar-brand">                        
-                            <h1>Food, LL</h1>
-                        </div>                          
-                 
-            </div>
+          <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">Food,LLC</a>
 
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <!-- Button for collapsing-->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+              </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+               <!-- Collapsable list. Will show only in xs mode--> 
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-block d-sm-none">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="menu-categories.html">
-                    <span class="menu-text">Chicken</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">
-                    <i class="fas fa-info-circle"></i>
-                    <br class="d-none d-sm-block">
-                    <span class="menu-text">Info</span>
-                    </a>
+                    <a class="nav-link active" aria-current="page" href="#">Chicken</a>
+                    <hr class="seperation-line d-block d-sm-none">
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">
-                    <i class="fas fa-certificate"></i>
-                    <br class="d-none d-sm-block">
-                    <span class="menu-text">Awards</span>
-                    </a>
+                    <a class="nav-link active" href="#">Beef</a>
+                    <hr class="seperation-line d-block d-sm-none">
                   </li>
-                  <li id="phone" class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">             
-                    <span class="phone-text">>410-602-5008<</span>
-                    <div>*We deliver</div>
-                    </a>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Sushi</a>
+                    <hr class="seperation-line d-block d-sm-none">
                   </li>
-                </ul>
-        </nav>
-    </header>
 
-    <div id="call-btn" class="d-block d-md-none">
-        <a class="btn" href="tel:410-602-5008">
-        <span class="glyphicon glyphicon-earphone"></span>
-        410-602-5008
-        </a>
-    </div>
-
-    <div id="xs-deliver" class="text-center d-block d-md-none">* We Deliver</div>
-
-    <div id="main-content" class="container">
-        <div class="jumbotron">
-            <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-fluid d-block d-sm-none">
-
-        </div>
-
-        <div id="home-tiles" class="row">
-            <div class="col-md-4 col-sm-6 col-12">
-                <a href="menu-categories.html"><div id="menu-tile"><span>Menu</span></div></a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-12">
-                <a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
-            </div>
-            <div class="col-md-4 col-sm-12 col-12">
-                <a href="https://www.google.com/maps/place/David+Chu's+China+Bistro/@39.3635874,-76.7138622,17z/data=!4m6!1m3!3m2!1s0x89c81a14e7817803:0xab20a0e99daa17ea!2sDavid+Chu's+China+Bistro!3m1!1s0x89c81a14e7817803:0xab20a0e99daa17ea" target="_blank">
-                  <div id="map-tile">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.675372390488!2d-76.71386218529199!3d39.3635874269356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81a14e7817803%3A0xab20a0e99daa17ea!2sDavid+Chu&#39;s+China+Bistro!5e0!3m2!1sen!2sus!4v1452824864156" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    <span>map</span>
-                  </div>        
-                </a>
               </div>
-        </div>
-    </div> <!--*/ end of main content*/ -->
+            </div>
+          </nav>
+  </header>  
 
-    <footer class="panel-footer">
-      <div class="container">
-        <div class="row">
-          <section id="hours" class="col-sm-4 ">
-            <span>Hours:</span><br>
-            Sun-Thurs: 11:15am - 10:00pm<br>
-            Fri: 11:15am - 2:30pm<br>
-            Saturday Closed
-            <hr class="d-block d-sm-none">
-          </section>
-          <section id="address" class="col-sm-4">
-            <span>Address:</span><br>
-            7105 Reisterstown Road<br>
-            Baltimore, MD 21215
-            <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
-            <hr class="d-block d-sm-none">
-          </section>
-          <section id="testimonials" class="col-sm-4">
-            <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
-            <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
-          </section>
+
+
+
+   <!--Main content-->
+
+  <div id="main-content" class="container">
+      <h1>Our Menu</h1>
+
+      <section class="row">
+        <div class="menu-item col-12">
+
+            <p id="Chicken">Chicken</p>
+
+            <p>Excepteur anim dolor excepteur aliqua incididunt laboris laborum eiusmod dolor quis sit officia sit anim. Ea tempor dolor veniam enim et cillum deserunt. Proident cillum eu sit occaecat cupidatat et do non eu adipisicing commodo tempor. Nulla exercitation duis ut veniam nisi magna incididunt cupidatat pariatur officia sint laborum excepteur. Sit dolore consectetur adipisicing duis velit occaecat. Deserunt magna qui adipisicing nisi commodo.
+           
+            Culpa dolor non tempor do proident anim non id labore nisi dolor consequat adipisicing. Proident et aliqua officia reprehenderit sunt minim velit proident elit sit. Adipisicing sint eiusmod do quis magna laborum proident est eiusmod laboris tempor fugiat. Enim consequat ipsum ad cupidatat veniam Lorem consectetur officia nulla velit cillum magna ullamco. Velit veniam magna ipsum aliquip mollit incididunt amet laboris cupidatat laborum id elit sint.
+
+            Officia pariatur deserunt ipsum velit commodo Lorem Lorem nostrud ea ad adipisicing. Magna sunt mollit Lorem amet voluptate cupidatat minim non nulla laboris. Aute exercitation tempor quis est aute sint voluptate ad et reprehenderit in. Nulla consectetur excepteur sunt sunt exercitation cillum. Ad consequat eu incididunt esse fugiat occaecat eu. Ad pariatur aliqua quis amet aliqua minim aute id laboris occaecat aliquip enim dolore. Incididunt aliqua voluptate nisi commodo id aliquip aute quis cupidatat sunt voluptate in eiusmod velit.
+
+            Magna minim mollit tempor reprehenderit qui qui in aliqua ad. Laborum in minim consequat laborum et ex exercitation tempor deserunt. Duis do ullamco deserunt veniam.
+
+            Sint consequat elit esse tempor dolor cupidatat sit laborum. Cillum in qui sit non quis qui nisi tempor incididunt veniam esse in laboris deserunt. Sint fugiat amet amet sint nisi. Officia amet elit ea occaecat mollit et magna laboris laborum. Reprehenderit tempor aliqua pariatur ut nisi sunt ut cupidatat ex incididunt dolore incididunt. Duis proident velit tempor mollit Lorem id sit. Laboris fugiat aliquip eu ea reprehenderit minim fugiat pariatur ipsum irure ad minim incididunt. 
+            </p>
         </div>
-        <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>
-        </div>
-      </div>
-    </footer>
+      </section>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -126,6 +89,10 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-  
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
   </body>
 </html>
