@@ -1,0 +1,428 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* Navbar settings*/
+.navbar {
+    background-color: #f6b319;   
+    }
+
+  .nav-item a:hover, .nav-item.active {
+    background: #E7E7E7; /*hover behaviour for the menu buttons*/
+  }
+
+  .menu-text, .nav-item a .fas{
+    line-height: 0.2;   
+  }
+  nav-item .fas{
+    padding-top: 10px;  
+  }
+  
+  #wrapper_test h1 { /* Restaurant name */
+    font-family: 'Lora', serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: .75;
+  } 
+
+  #wrapper_test p{ /* Kusher certified*/
+    color:#000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+  }  
+
+  body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #61122f;
+    font-family: 'Oxygen', sans-serif;
+  }
+  .container-fluid a img{ /* logo dimensioning*/
+    width:150px;
+    height:150px;
+    border-radius:50%;
+  }
+
+#wrapper_test{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+} 
+#phone a {
+    white-space: nowrap; /* Prevents the content from wrapping onto the next line for the phone number */
+  }
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aligns items horizontally in the center */
+    justify-content: flex-start; /* Aligns items vertically in the center */
+    color: #951C49 !important;
+}
+/**************************HOME PAGE***********/
+
+.container .jumbotron{
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+  margin-top:30px;
+  margin-bottom:10px;
+}
+
+#menu-tile, #specials-tile, #map-tile{
+  height:250px;
+  width:100%;
+  margin-bottom: 15px;
+  position: relative;
+  border:2px solid 3F0C1F;
+  overflow: hidden;
+}
+
+#menu-tile{
+  background: url('../images/menu-tile.jpg');
+  background-position: center;
+}
+
+#specials-tile {
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tile span, #specials-tile span, #map-tile span{
+  position: absolute;
+  bottom: 0;
+  right:0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: 70%;  
+  
+}
+/***********END HOME PAGE*********/
+          /* FOOTER*/
+
+.panel-footer{
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+/* END FOOTER */
+
+/*************Menu-page.html*/
+
+
+.category-tile{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;  
+  border:2px solid #3F0C1F;
+  overflow: hidden
+}
+.category-tile span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+.category-tile:hover{
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-subtitle{
+  margin-bottom: 50px;
+}
+
+/***********END MENU CATEGORIES PAGE*****/
+
+/* SINGLE CATEGORY PAGE */
+.menu-item-tile {
+  margin-bottom: 25px;
+}
+.menu-item-tile hr {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu-item-tile .menu-item-price {
+  font-size: 1.1em;
+  text-align: center;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+  font-size: .6em;
+}
+.menu-item-photo {
+  position: relative;
+  border: 2px solid #3F0C1F; 
+  overflow: hidden;
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  /* max-width: 250px; */
+}
+.menu-item-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
+.menu-item-description {
+  padding-right: 30px;
+}
+h3.menu-item-title {
+  margin: 0 0 10px;
+}
+.menu-item-details {
+  font-size: .9em;
+  font-style: italic;
+}
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+/* END SINGLE CATEGORY PAGE */
+
+
+
+
+
+
+  /********** Large devices only **********/
+@media (min-width: 1200px) {
+    .container .jumbotron {
+      background: url('../images/jumbotron_1200.jpg') no-repeat;
+      height: 675px;    
+      width: 1200px;
+      margin:20px auto 15px; 
+
+    }
+  }
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Header */
+    .container-fluid a img{
+        width:75px;
+        height:75px;
+        border-radius:50%;
+        margin: 5px 5px 5px 0;
+    }
+    /* End Header */
+
+    /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+  }
+  /* End Home Page */
+}
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+  }
+  /* End Home Page */
+    
+}
+
+
+
+
+/********** Extra small devices only **********/
+@media (min-width:576px) and (max-width: 767px) {
+    /* Header */
+    .navbar-brand {
+      padding-top: 10px;
+      height: 80px;
+    }
+    #wrapper_test h1 { /* Restaurant name */
+      padding-top: 10px;
+      font-size: 5vw; /* 1vw = 1% of viewport width */      
+    }
+    #wrapper_test p { /* Kosher cert */
+      font-size: .6em;
+      margin-top: 12px;
+    }
+    .navbar-brand p img { /* Star-K */
+      height: 20px;
+    }
+  
+    #collapsable-nav a { /* Collapsed nav menu text */
+      font-size: 1.2em;
+    }
+    #collapsable-nav a span { /* Collapsed nav menu glyph */
+      font-size: 1em;
+      margin-right: 5px;
+    }
+  
+    #call-btn > a {
+      font-size: 1.5em;
+      display: block;
+      margin: 0 20px;
+      margin-top: 5px;
+      padding: 10px;
+      border: 2px solid #fff;
+      background-color: #f6b319;
+      color: #951c49;
+    }
+    #xs-deliver {
+      margin-top: 5px;
+      font-size: .7em;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .nav-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* Aligns items horizontally in the center */
+        justify-content: flex-start; /* Aligns items vertically in the center */
+        color: #951C49 !important;
+        margin-left: 12px;
+      }
+      .nav-item i{
+        padding-right: 5px;      }    
+
+
+    /* End Header */  
+    
+    /* Home Page */
+    .container .jumbotron {
+        background: url('../images/jumbotron_768.jpg') no-repeat;
+        height: 432px;
+    }
+    
+
+
+
+}
+/********** Extra extra small devices only **********/
+@media (max-width: 575px) {
+    /* Header */
+    .navbar-brand {
+      padding-top: 10px;
+      height: 80px;
+    }
+    #wrapper_test h1 { /* Restaurant name */
+      padding-top: 10px;
+      font-size: 6vw; /* 1vw = 1% of viewport width */      
+    }
+    #wrapper_test p { /* Kosher cert */
+      font-size: .6em;
+      margin-top: 12px;
+    }
+    .navbar-brand p img { /* Star-K */
+      height: 20px;
+    }
+  
+    #collapsable-nav a { /* Collapsed nav menu text */
+      font-size: 1.2em;
+    }
+    #collapsable-nav a span { /* Collapsed nav menu glyph */
+      font-size: 1em;
+      margin-right: 5px;
+    }
+  
+    #call-btn > a {
+      font-size: 1.5em;
+      display: block;
+      margin: 0 20px;
+      margin-top: 5px;
+      padding: 10px;
+      border: 2px solid #fff;
+      background-color: #f6b319;
+      color: #951c49;
+    }
+    #xs-deliver {
+      margin-top: 5px;
+      font-size: .7em;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .nav-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* Aligns items horizontally in the center */
+        justify-content: flex-start; /* Aligns items vertically in the center */
+        color: #951C49 !important;
+        margin-left: 12px;
+      }
+      .nav-item i{
+        padding-right: 5px;      }    
+
+
+    /* End Header */  
+    
+    /* Home Page */
+    #menu-tile, #specials-tile, #map-tile{
+      height:200px;
+      width:200px;
+      margin:0 auto 15px; 
+      position: relative;
+      border:2px solid 3F0C1F;
+      overflow: hidden;
+    }
+    /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  /* End Footer */
+}

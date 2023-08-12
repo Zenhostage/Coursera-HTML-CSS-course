@@ -1,0 +1,278 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* Navbar settings*/
+.navbar {
+    background-color: #f6b319;   
+    
+  }
+
+  .nav-item a:hover {
+    background: #E7E7E7; /*hover behaviour for the menu buttons*/
+  }
+
+  #wrapper_test h1 { /* Restaurant name */
+    font-family: 'Lora', serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: .75;
+  } 
+
+  #wrapper_test p{ /* Kusher certified*/
+    color:#000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+  }  
+
+  body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #61122f;
+    font-family: 'Oxygen', sans-serif;
+  }
+  .container-fluid a img{ /* logo dimensioning*/
+    width:150px;
+    height:150px;
+    border-radius:50%;
+  }
+
+#wrapper_test{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+} 
+#phone a {
+    white-space: nowrap; /* Prevents the content from wrapping onto the next line for the phone number */
+  }
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aligns items horizontally in the center */
+    justify-content: flex-start; /* Aligns items vertically in the center */
+    color: #951C49 !important;
+}
+/**************************HOME PAGE***********/
+
+.container .jumbotron{
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+  margin-top:30px;
+  margin-bottom:10px;
+}
+
+#menu-tile, #specials-tile, #map-tile{
+  height:250px;
+  width:250px;
+  margin-bottom: 15px;
+  position: relative;
+  border:2px solid 3F0C1F;
+  overflow: hidden;
+}
+
+#menu-tile{
+  background: url('../images/menu-tile.jpg');
+  background-position: center;
+}
+
+#specials-tile {
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tile span, #specials-tile span, #map-tile span{
+  position: absolute;
+  bottom: 0;
+  right:0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: 70%;
+
+}
+
+  /********** Large devices only **********/
+@media (min-width: 1200px) {
+    .container .jumbotron {
+      background: url('../images/jumbotron_1200.jpg') no-repeat;
+      height: 675px;     
+
+    }
+  }
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Header */
+    .container-fluid a img{
+        width:75px;
+        height:75px;
+        border-radius:50%;
+        margin: 5px 5px 5px 0;
+    }
+    /* End Header */
+
+    /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+  }
+  /* End Home Page */
+}
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+  }
+  /* End Home Page */
+    
+}
+
+
+
+
+/********** Extra small devices only **********/
+@media (min-width:576px) and (max-width: 767px) {
+    /* Header */
+    .navbar-brand {
+      padding-top: 10px;
+      height: 80px;
+    }
+    #wrapper_test h1 { /* Restaurant name */
+      padding-top: 10px;
+      font-size: 5vw; /* 1vw = 1% of viewport width */      
+    }
+    #wrapper_test p { /* Kosher cert */
+      font-size: .6em;
+      margin-top: 12px;
+    }
+    .navbar-brand p img { /* Star-K */
+      height: 20px;
+    }
+  
+    #collapsable-nav a { /* Collapsed nav menu text */
+      font-size: 1.2em;
+    }
+    #collapsable-nav a span { /* Collapsed nav menu glyph */
+      font-size: 1em;
+      margin-right: 5px;
+    }
+  
+    #call-btn > a {
+      font-size: 1.5em;
+      display: block;
+      margin: 0 20px;
+      margin-top: 5px;
+      padding: 10px;
+      border: 2px solid #fff;
+      background-color: #f6b319;
+      color: #951c49;
+    }
+    #xs-deliver {
+      margin-top: 5px;
+      font-size: .7em;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .nav-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* Aligns items horizontally in the center */
+        justify-content: flex-start; /* Aligns items vertically in the center */
+        color: #951C49 !important;
+        margin-left: 12px;
+      }
+      .nav-item i{
+        padding-right: 5px;      }    
+
+
+    /* End Header */  
+    
+    /* Home Page */
+    .container .jumbotron {
+        background: url('../images/jumbotron_768.jpg') no-repeat;
+        height: 432px;
+    }
+    
+
+
+
+
+}
+/********** Extra extra small devices only **********/
+@media (max-width: 575px) {
+    /* Header */
+    .navbar-brand {
+      padding-top: 10px;
+      height: 80px;
+    }
+    #wrapper_test h1 { /* Restaurant name */
+      padding-top: 10px;
+      font-size: 5vw; /* 1vw = 1% of viewport width */      
+    }
+    #wrapper_test p { /* Kosher cert */
+      font-size: .6em;
+      margin-top: 12px;
+    }
+    .navbar-brand p img { /* Star-K */
+      height: 20px;
+    }
+  
+    #collapsable-nav a { /* Collapsed nav menu text */
+      font-size: 1.2em;
+    }
+    #collapsable-nav a span { /* Collapsed nav menu glyph */
+      font-size: 1em;
+      margin-right: 5px;
+    }
+  
+    #call-btn > a {
+      font-size: 1.5em;
+      display: block;
+      margin: 0 20px;
+      margin-top: 5px;
+      padding: 10px;
+      border: 2px solid #fff;
+      background-color: #f6b319;
+      color: #951c49;
+    }
+    #xs-deliver {
+      margin-top: 5px;
+      font-size: .7em;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .nav-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* Aligns items horizontally in the center */
+        justify-content: flex-start; /* Aligns items vertically in the center */
+        color: #951C49 !important;
+        margin-left: 12px;
+      }
+      .nav-item i{
+        padding-right: 5px;      }    
+
+
+    /* End Header */  
+    
+    /* Home Page */
+    
+}
