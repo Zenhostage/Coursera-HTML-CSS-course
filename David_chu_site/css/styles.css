@@ -204,7 +204,7 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 20px;
-  /* max-width: 250px; */
+  max-width: 250px;
 }
 .menu-item-photo div {
   position: absolute;
@@ -339,6 +339,8 @@ h3.menu-item-title {
         background: url('../images/jumbotron_768.jpg') no-repeat;
         height: 432px;
     }
+
+    
     
 
 
@@ -410,6 +412,7 @@ h3.menu-item-title {
       border:2px solid 3F0C1F;
       overflow: hidden;
     }
+   
     /* Footer */
   .panel-footer section {
     margin-bottom: 30px;
