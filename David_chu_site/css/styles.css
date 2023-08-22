@@ -20,7 +20,11 @@
     padding-top: 10px;  
   }
   
-  #wrapper_test h1 { /* Restaurant name */
+  #wrapper_test a {
+    text-decoration: none;
+  }
+
+  #wrapper_test  h1 { /* Restaurant name */
     font-family: 'Lora', serif;
     color: #557c3e;
     font-size: 1.5em;
@@ -30,6 +34,7 @@
     margin-top: 10px;
     margin-bottom: 0;
     line-height: .75;
+    text-decoration:none;
   } 
 
   #wrapper_test p{ /* Kusher certified*/
